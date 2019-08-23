@@ -1,8 +1,7 @@
 def my_collect(arr)
   new = []
-  i = 0
-  while i < arr.length do
-   new.push(yield(arr[i]))
+  arr.each do |el|
+   new.push(yield([el])
     i +=1
   end
   arr
